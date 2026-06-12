@@ -13,11 +13,23 @@ It bundles:
 
 ## Install (Claude Code)
 
+From the public marketplace repo (recommended — shareable, no checkout needed):
+
+```bash
+claude plugin marketplace add tech-sumit/demodu-plugins
+claude plugin install demodu-recorder@demodu
+```
+
+…or from a local checkout of this monorepo (dev):
+
 ```bash
 # from the repo root (the dir that contains plugins/)
 claude plugin marketplace add ./plugins
 claude plugin install demodu-recorder@demodu
 ```
+
+(The two marketplaces share the name `demodu`, so add only one — remove the
+other first with `claude plugin marketplace remove demodu` if you switch.)
 
 Then, in a Claude Code session:
 

@@ -1,16 +1,23 @@
 {
   "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
   "name": "demodu",
-  "description": "demodu plugins — drive your demodu account from Claude Code / Cursor",
+  "description": "demodu plugins \u2014 drive your demodu account from Claude Code / Cursor",
   "version": "0.1.0",
-  "owner": { "name": "demodu" },
+  "owner": {
+    "name": "demodu"
+  },
   "plugins": [
     {
       "name": "demodu-recorder",
       "source": "./demodu-recorder",
       "description": "Record the demodu google test script via MCP and auto-download the video when it's ready",
-      "version": "0.1.0",
-      "tags": ["demodu", "mcp", "video", "recording"],
+      "version": "0.1.1",
+      "tags": [
+        "demodu",
+        "mcp",
+        "video",
+        "recording"
+      ],
       "defaultEnabled": true
     }
   ]
