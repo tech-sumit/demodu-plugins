@@ -2,11 +2,9 @@
   "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
   "name": "demodu-recorder",
   "displayName": "demodu Recorder",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Record the demodu google test script via the demodu MCP server and auto-download the video when the render is ready (PostToolUse hook on demodu_recording_playback). Cursor-compatible.",
   "author": { "name": "demodu" },
   "homepage": "https://demodu.com",
-  "keywords": ["demodu", "mcp", "video", "recording", "playwright"],
-  "mcpServers": "./.mcp.json",
-  "hooks": "./hooks/hooks.json"
+  "keywords": ["demodu", "mcp", "video", "recording", "playwright"]
 }

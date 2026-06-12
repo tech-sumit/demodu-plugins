@@ -11,7 +11,7 @@
       "name": "demodu-recorder",
       "source": "./demodu-recorder",
       "description": "Record the demodu google test script via MCP and auto-download the video when it's ready",
-      "version": "0.1.1",
+      "version": "0.1.2",
       "tags": [
         "demodu",
         "mcp",
