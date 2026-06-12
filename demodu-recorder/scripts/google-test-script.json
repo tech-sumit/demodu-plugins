@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "name": "Google.com — take-control / captcha test",
+  "target": { "url": "https://www.google.com", "viewport": { "width": 1440, "height": 810 } },
+  "auth": { "kind": "none" },
+  "scenes": [
+    { "kind": "intro", "title": "Google live-mirror test", "subtitle": "rrweb DOM mirror + manual take-control" },
+    { "kind": "navigate", "path": "/" },
+    { "kind": "waitFor", "selector": "body", "state": "visible", "timeoutMs": 15000 },
+    { "kind": "narrate", "text": "Opening google.com. If a captcha or consent page appears, click into the live mirror to take control, solve it manually, then click Resume." },
+    { "kind": "waitForHuman", "reason": "Captcha / consent likely — click the live mirror to take control, solve it, then click Resume.", "timeoutMs": 600000 },
+    { "kind": "type", "selector": "[name=\"q\"]", "text": "demodu ai demo recorder", "slow": true },
+    { "kind": "highlight", "selector": "[name=\"q\"]", "text": "Typed by the script", "placement": "bottom", "variant": "info", "durationMs": 2400 },
+    { "kind": "beat", "ms": 1000 },
+    { "kind": "narrate", "text": "Query typed. Take control again to press Enter or click a result." },
+    { "kind": "waitForHuman", "reason": "Take control to press Enter / click a result, then Resume.", "timeoutMs": 600000 },
+    { "kind": "outro", "message": "Live DOM-mirror + take-control test complete." }
+  ]
+}
